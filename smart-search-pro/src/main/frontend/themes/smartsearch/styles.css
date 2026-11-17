@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+html { --lumo-font-family: 'DM Sans', sans-serif; --lumo-primary-color: #6157e8; --lumo-primary-text-color: #6157e8; --lumo-border-radius-m: 12px; }
+body { background:#f5f6fb; color:#20223a; }
+.app-shell { background:#f5f6fb; min-height:100vh; }
+.topbar { box-sizing:border-box; padding:16px clamp(18px,4vw,58px); background:#fff; border-bottom:1px solid #e9eaf2; position:sticky; top:0; z-index:5; }
+.brand-icon { width:44px;height:44px;border-radius:14px;background:#6157e8;color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px #6157e833; }
+.brand-icon h2 { margin:0;color:white;font-family:Manrope,sans-serif;font-size:24px; }
+.brand-copy h3 { margin:0;font-family:Manrope,sans-serif;font-size:18px;color:#20223a; }
+.brand-copy span { font-size:9px;letter-spacing:1.6px;color:#85879b;font-weight:700; }
+.main-content { max-width:1260px; margin:0 auto; padding:36px clamp(16px,4vw,48px) 60px; box-sizing:border-box; }
+.page-heading { font-family:Manrope,sans-serif;font-size:clamp(28px,3vw,38px);letter-spacing:-1.3px;margin:8px 0 0;color:#20223a; }
+.page-subtitle { color:#777b91; margin-top:0;max-width:700px; }
+.stats-row { gap:14px; flex-wrap:wrap; }
+.stat-card { flex:1;min-width:180px;background:white;border:1px solid #e9eaf2;border-radius:16px;box-shadow:0 4px 18px #20223a06; }
+.stat-card span:first-child { font-size:10px;letter-spacing:1px;color:#85879b;font-weight:700; }
+.stat-card vaadin-span, .stat-card span:nth-child(2) { color:#252743;font-family:Manrope,sans-serif;font-size:20px;font-weight:800; }
+.surface-panel { background:white;border:1px solid #e9eaf2;border-radius:18px;box-shadow:0 8px 26px #20223a08; }
+.surface-panel h3 { margin:0;font-family:Manrope,sans-serif;font-size:18px; }
+.surface-panel p { margin-top:-8px;color:#83869b;font-size:13px; }
+.search-panel { border-top:3px solid #6157e8; }
+.search-bar { flex-wrap:wrap; }
+.search-input { min-width:220px; }
+.primary-button { background:#6157e8;color:white;border-radius:11px;font-weight:700;box-shadow:0 6px 14px #6157e82b; }
+.primary-button:hover { background:#5146d8; }
+.quiet-button { color:#5147d7;background:#f1f0ff;border-radius:9px;font-weight:600; }
+.danger-button { color:#c3425a;background:#fff0f2;border-radius:9px;font-weight:600; }
+.result-summary { display:flex;gap:10px;align-items:center;color:#62657d;font-size:13px; }
+.category-pill { display:inline-block;padding:6px 10px;background:#f1f0ff;color:#5147d7;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.4px; }
+.data-grid { border:1px solid #eff0f6;border-radius:12px;overflow:hidden; }
+vaadin-grid { --lumo-base-color:#fff;--lumo-header-text-color:#74778d;--lumo-body-text-color:#32344d;--lumo-font-size-s:12px; }
+vaadin-grid::part(header-cell) { font-size:10px;letter-spacing:.7px;font-weight:800;background:#fafaff; }
+vaadin-grid::part(row):hover { background:#f8f8ff; }
+@media(max-width:700px){.topbar{padding:12px 16px}.brand-copy h3{font-size:15px}.main-content{padding:22px 12px 36px}.search-bar{align-items:stretch}.search-bar vaadin-combo-box{width:100%!important}.search-bar vaadin-button{width:100%}.stats-row{gap:8px}.stat-card{min-width:130px}}
